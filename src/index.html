@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../dist/style.css" />
-  </head>
-  <body>
-  
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../dist/style.css" />
+</head>
+
+<body>
+
+  <div class="mx-auto">
+    <nav class="nav-bar p-5 bg-white shadow md:flex md:items-center md:justify-between">
+      <!-- logo -->
+      <a href="#" class="block py-2 pr-3 pl-4 text-gray
+  font-semibold hover:text-blue-600 focus:outline-none "> logo</a>
+      </a>
+      <!-- toggle button for mobile menu-->
+      <button id="menuBtn" onclick="toggleMenu()" class="md:hidden flex items-center px-3 py-2 border rounded text
+  uppercase border-gray-700 hover:border-blue-600 appearance-
+  none focus:outline-none">
+      </button>
+      <ul id="menuItems" class="md:flex hidden w-full pb-4
+pt-2 mt-2 mb-4 list-reset lg:pb-0 justify-
+end md:w-auto md:mt-0 md:mb-0 mx-9">
+        <li><a href="#home" class="block py-2 pr-4 pl-
+  4 leading-tight no-underline navActiveClass">Home
+          </a></li>
+        <li><a href="#about" class="block py-2 pr-4 pl-
+    4 leading-tight no-underline  navActiveClass">Beaches
+          </a></li>
+        <li><a href="#services" class="block py-2 pr-
+      4 pl-4 leading-tight no-underline
+      navActiveClass">About
+          </a></li>
+        <li><a href="#services" class="block py-2 pr-
+      4 pl-4 leading-tight no-underline
+      navActiveClass">Contact
+          </a></li>
+
+      </ul>
+
+
+    </nav>
+  </div>
+<script src="../src/index.js"></script>
+</body>
+
 </html>
